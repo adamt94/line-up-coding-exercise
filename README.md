@@ -33,6 +33,8 @@ I am using NextJS patterns such as error.js & layout.js to render a simple navba
 
 I've not used any ui libraries just using tailwind to make some simple components and generated a theme using googles material theme.
 
+I've also not used any state management libraries but would use them if was implementing basket logic
+
 
 
 
