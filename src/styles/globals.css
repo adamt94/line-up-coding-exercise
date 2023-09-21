@@ -1,0 +1,10 @@
+@import url(theme/tokens.css);
+@import url(theme/colors.module.css);
+@import url(theme/theme.light.css) (prefers-color-scheme: light);
+@import url(theme/theme.dark.css) (prefers-color-scheme: dark);
+
+/* These imports are a theme using googles material design system */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
