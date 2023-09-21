@@ -17,7 +17,7 @@ describe('QuantityInput', () => {
 
     const value = screen.getByText('1')
     expect(value).toBeInTheDocument()
-    expect(handleChange).toHaveBeenCalledWith(1)
+    expect(handleChange).toHaveBeenCalledWith(1, 1)
   })
 
   it('decrements the value when the minus button is clicked', () => {
@@ -29,7 +29,7 @@ describe('QuantityInput', () => {
 
     const value = screen.getByText('1')
     expect(value).toBeInTheDocument()
-    expect(handleChange).toHaveBeenCalledWith(1)
+    expect(handleChange).toHaveBeenCalledWith(1, -1)
   })
 
   it('does not decrement the value below zero', () => {

@@ -3,22 +3,24 @@ import { useState } from 'react'
 type QuantityInputProps = {
   initialValue: number
   onChange: (value: number, step: number) => void
+  step?: number
 }
 
 export default function QuantityInput({
   initialValue,
   onChange,
+  step = 1,
 }: QuantityInputProps) {
   const [value, setValue] = useState(initialValue)
 
   const handleIncrement = () => {
-    onChange(value + 1, 1)
-    setValue(value + 1)
+    onChange(value + step, step)
+    setValue(value + step)
   }
 
   const handleDecrement = () => {
-    onChange(value - 1, -1)
-    setValue(value - 1)
+    onChange(value - step, -step)
+    setValue(value - step)
   }
 
   return (
